@@ -15,6 +15,8 @@ Add the following to your configuration
 environment.systemPackages = [
   pkgs.devenv
 ];
+
+programs.nix-ld.enable = true;
 ```
 
 Inside the project run `direnv allow` to enable the automatic environment creation `.envrc` to run and setup the space.

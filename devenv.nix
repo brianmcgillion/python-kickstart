@@ -12,16 +12,20 @@
     pkgs.stdenv.cc.cc.lib
     pkgs.libz
     pkgs.gcc-unwrapped
-    pkgs.python3Packages.python-lsp-server
-    pkgs.python3Packages.ruff
   ];
 
   languages = {
-    nix.enable = true;
+    nix = {
+      enable = true;
+      lsp.package = pkgs.nixd;
+    };
 
     python = {
       enable = true;
-      venv.enable = true;
+      venv = {
+        enable = true;
+        #requirements = ./requirements.txt;
+      };
       uv = {
         enable = true;
         sync = {
@@ -38,7 +42,8 @@
   '';
 
   enterShell = ''
-    hello
+    # TODO: Add aider if you want to use it
+    #uv tool install aider-chat@latest
     git --version
   '';
 
