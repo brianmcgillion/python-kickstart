@@ -6,7 +6,7 @@ This kick-starter is based on https://devenv.sh/ and specifically tailored to Py
 There are some opinionated defaults set here.
 
 ## Setting up
-The full setup can be seen in (https://devenv.sh/getting-started/)[devenv setup].
+The full setup can be seen at https://devenv.sh/getting-started/.
 
 ### TL;DR
 Add the following to your configuration
