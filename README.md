@@ -1,12 +1,12 @@
 # python-kickstart
-Bootstrap a python dev environment on nixos.
+Bootstrap a Python dev environment on Nixos.
 
-This kick-starter is based on https://devenv.sh/. Specifically tailored to python development https://devenv.sh/supported-languages/python/.
+This kick-starter is based on https://devenv.sh/ and specifically tailored to Python development https://devenv.sh/supported-languages/python/.
 
 There are some opinionated defaults set here.
 
 ## Setting up
-The full setup can be seen in (devenv.sh)[https://devenv.sh/getting-started/].
+The full setup can be seen in (https://devenv.sh/getting-started/)[devenv setup].
 
 ### TL;DR
 Add the following to your configuration
@@ -32,7 +32,7 @@ uv sync
 `devenv.nix` controls the native dependencies of the project and the scaffolding to define a UV project.
 - uv package manager
 - venv also supported
-- some of the most common native dependency (OS dependent library packages) are defined.
+- some of the most common native dependencies (OS-dependent library packages) are defined.
 
 UV was chosen as the default package and project manager.
 - `uv lock` `uv sync` `uv ...` control the python project as normal
