@@ -11,6 +11,9 @@
   packages = [
     pkgs.stdenv.cc.cc.lib
     pkgs.libz
+    pkgs.gcc-unwrapped
+    pkgs.python3Packages.python-lsp-server
+    pkgs.python3Packages.ruff
   ];
 
   languages = {
