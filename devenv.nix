@@ -22,10 +22,7 @@
 
     python = {
       enable = true;
-      venv = {
-        enable = true;
-        #requirements = ./requirements.txt;
-      };
+      venv.enable = true;
       uv = {
         enable = true;
         sync = {

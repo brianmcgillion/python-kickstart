@@ -10,18 +10,12 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "black>=25.1.0",
-    #    "flake8>=7.2.0",
-    "isort>=6.0.1",
-    "pyls-memestra>=0.0.16",
-    "pylsp-mypy>=0.7.0",
-    "pylsp-rope>=0.1.17",
-    "pytest>=8.3.5",
-    "python-lsp-black>=2.0.0",
-    "python-lsp-isort>=0.2.1",
-    "python-lsp-ruff>=2.2.2",
-    "python-lsp-server[all]>=1.12.2",
-    "ruff>=0.11.12",
+    "pyls-memestra",
+    "pylsp-mypy",
+    "pylsp-rope",
+    "pytest",
+    "python-lsp-server",
+    "ruff",
 ]
 
 # TODO: define the build backend hatchling or setuptools

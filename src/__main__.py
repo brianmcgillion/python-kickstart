@@ -1,5 +1,7 @@
+"""A simple interface to run the package as a script."""
 import os
 import sys
+
 
 if not __package__:
     # Make CLI runnable from source tree with
